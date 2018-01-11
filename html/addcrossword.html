@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/addcrossword.css">
+</head>
+<header>
+	<h1>Add crossword</h1>
+</header>
+
+<div id="form">
+
+<div class="fish" id="fish"></div>
+<div class="fish" id="fish2"></div>
+
+<form id="waterform" method="post">
+
+<div class="formgroup" id="name-form">
+    <label for="name">Crossword title<span class="req">*</span></label>
+    <input pattern=".{3,25}"   required title="Between 3-25 marks needed" type="text" id="name" name="title" />
+</div>
+
+<div class="formgroup" id="email-form">
+    <label for="email">Tag or short description<span class="req">*</span></label>
+    <input pattern=".{3,25}"   required title="Between 3-25 marks needed" type="text" id="email" name="tags" />
+</div>
+
+	<input type="submit" value="Add crossword" />
+</form>
+</div>
+</html>

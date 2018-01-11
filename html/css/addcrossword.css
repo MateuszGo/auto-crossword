@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+
+body, html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: #c1bdba;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1{
+	font-weight: normal;
+	font-size: 4em;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 500px;
+	color: #444;
+	text-align: center;
+
+}
+
+/* Animation webkit */
+@-webkit-keyframes myfirst
+{
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+/* Animation */
+@keyframes myfirst
+{
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish{
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: myfirst 24s;
+	-webkit-animation: myfirst 24s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+#fish{
+	top: 120px;
+}
+
+#fish2{
+	top: 260px;
+	animation-delay: 12s;
+	-webkit-animation-delay: 12s;
+}
+
+
+header{
+	/*height: 160px;*/
+	/*background: url('http://www.geertjanhendriks.nl/codepen/form/golf.png') repeat-x bottom;*/
+}
+
+#form{
+	padding: 0 40px 40px;
+	/*height: 100%;	*/
+	background-color: rgba(19, 35, 47, 0.9);
+	overflow: hidden;
+	position: relative;
+	max-width: 600px;
+  	margin: 40px auto;
+  	border-radius: 4px;
+  	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+form{
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 40px;
+	color: white;
+	position: relative;
+	
+	
+}
+label, input, textarea{
+	display: block;	
+}
+input, textarea {
+  font-size: 22px;
+  width: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+	overflow: auto;
+}
+input[type="submit"], #addwordbutton{
+	border: 0;
+  	outline: none;
+  	border-radius: 0;
+  	padding: 15px 0;
+  	font-size: 2rem;
+  	font-weight: 600;
+  	text-transform: uppercase;
+  	letter-spacing: .1em;
+  	background: #1ab188;
+  	color: #ffffff;
+ 	-webkit-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+	-webkit-appearance: none;
+}
+input[type="submit"]:hover, #addwordbutton{
+	background-color: #179b77;
+	
+}
+label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 22px;
+
+}
+label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+.formgroup, .formgroup-active, .formgroup-error{
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 10.5%;
+	transition: background-image 0.7s;
+	-webkit-transition: background-image 0.7s;
+	-moz-transition: background-image 0.7s;
+	-o-transition: background-image 0.7s;
+	width: 566px;
+	padding-top: 2px;
+}
+
+.formgroup{
+	position: relative;
+  	margin-bottom: 40px;
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');	
+}
+.formgroup-active{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
+}
+.formgroup-error{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
+	color: red;
+}
